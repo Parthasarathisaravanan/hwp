@@ -11,7 +11,7 @@ def index():
     
     return render_template('page.html')
 
-@app.route('/result', methods=['post', 'get'])
+@app.route('/result', methods=['post'])
 def login():
     if request.method == 'POST':
          weight = request.form["weight"]
